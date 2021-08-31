@@ -50,7 +50,7 @@
           {{user.username | title}}
         </a>
         <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">New Post</a>
+          <a class="dropdown-item" href="{% url 'article_new' %}">New Post</a>
           <a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a>
           <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
         </div>

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # my created apps
     'accounts',
     'pages',
+    'articles',
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -146,3 +147,8 @@ LOGOUT_REDIRECT_URL = 'home'
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
+# MEDIA
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))

@@ -3,16 +3,17 @@
 {% block title %}Akaxon{% endblock title %}
 
 {% block content%}
-<div class="row justify-content-center pt-3">
+<div class="row justify-content-center pt-3 mt-5" >
     <div class="col-8">
-          {% if user.is_authenticated %}
-            {{user.username}}!
-            <p><a href="{% url 'logout' %}">Log Out</a></p>
-          {% else %}
-            <p>You are not logged in</p>
-            <a href="{% url 'login' %}">Login</a>
-            <a href="{% url 'signup' %}">Sign Up</a>
-          {% endif %}
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, Friends!</h1>
+        <p class="lead">Welcome to Xasanboy's blog.</p>
+        <hr class="my-4">
+        <p>This blog is all about programming, web development, django web framework and some roadmaps.</p>
+        <p class="lead">
+          <a href="{% url 'article_list' %}" class="btn btn-primary btn-lg">View Posts</a>
+        </p>
       </div>
+    </div>
   </div>
 {% endblock content %}
