@@ -2,13 +2,15 @@
 {% block title %} Article Detail {% endblock title %}
 
 {% block content%}
-<div class="container-flud p-3">
+<div class="container p-3">
   <div class="card">
     <div class="card-body">
       {% if object.photo %}
         <img class="card-img-top" src="{{object.photo.url}}" alt="{{object.title}}">
       {% endif %}
-      <h1 class="card-title">{{object.title}}</h1>
+      <br><br>
+      <b class="card-title">{{object.title}}</b>
+      <br>
       <h6 class="card-subtitle mb-2 text-muted">
         Author: {{object.author}} | {{object.date}}
       </h6>

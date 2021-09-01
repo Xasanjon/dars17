@@ -8,6 +8,7 @@
     <h1>Edit</h1>
     <form method="POST" enctype="multipart/form-data">
       {% csrf_token %}
+      {{form.media}}
       {{form|crispy}}
       <button type="submit" class="btn btn-info ml-2">Save</button>
     </form>
